@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute force napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brute force Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Brute force napad?</h3>
+                    <p>Napad grubom silom koristi pristup pokušaja i greške za sistematsko pogađanje informacija za prijavu,
+                        vjerodajnica i ključeva za šifriranje. Napadač šalje kombinacije korisničkih imena i lozinki 
+                        dok konačno ne pogode ispravno. <br>
+                        Jednom uspješan, akter može ući u sistem maskirajući se kao legitimni korisnik
+                        i ostati unutra dok ga ne otkriju. Oni koriste ovo vrijeme za bočno kretanje,
+                        instaliranje stražnjih vrata, stjecanje znanja o sistemu koje će koristiti u 
+                        budućim napadima i, naravno, krađu podataka.
+
+                       </p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/brute1.jpg" alt="Brute force primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>
+                    Napadač bira metu koja može biti login stranica, korisnički nalog, baza podataka ili administrativni panel.
+                    Nakon odabira mete napadač priprema alate i liste lozinki, koristeći prethodno ukradene baze podataka ili generisane kombinacije.
+
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/brute2.jpg" alt="Brute force primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Napadač pokreće alat koji automatski isprobava hiljade ili čak milione lozinki.
+                    Sistem bilježi neuspješne pokušaje, a napadač može pokušati da izbjegne zaštite poput CAPTCHA ili IP blokiranja.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/brute3.jpg" alt="Brute force primjer  3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Napadač uspješno pogađa lozinku i dobija pristup nalogu ili sistemu.
+                    Može dalje koristiti podatke, instalirati malware ili prodati pristup na dark webu.
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

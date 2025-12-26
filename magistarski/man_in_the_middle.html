@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man in the middle Napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Man in the middle Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Man in the middle napad?</h3>
+                    <p>MITM napadi su jedni od najčešćih kibernetičkih napada upravo zato što su jednostavni
+                        i potencijalno vrlo unosni. Ne samo da se mogu izložiti financijski detalji,
+                        nego čak i svi osobni podaci i vrijedne informacije. MITM napadi su napadi gdje se 
+                        kriminalac ubaci između komunikacije dva uređaja i čita promet bez da ga itko primijeti.
+                        Obično su ta dva uređaja prijenosno računalo i Wi-Fi usmjerivač. Ako se ne koristi 
+                        šifrirana veza, što se često događa kada se posjećuje nesigurna web-stranica, čovjek
+                        u sredini može saznati sve osjetljive informacije korisnika. Ukratko, MITM napad može
+                        dovesti do krađe identiteta, krađe podataka, te izloženosti bankovnih podataka i svih 
+                        drugih informacija koje korisnik ne bi inače podijelio s javnošću.</p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/mitm1.jpg" alt="mitm primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Osoba A šalje osobi B poruku.
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/mitm2.jpg" alt="mitm primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>MITM napadač presreće poruku bez znanja osobe A ili osobe B.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/mitm2.jpg" alt="mitm primjer 3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>MITM napadač mijenja sadržaj poruke ili u potpunosti uklanja poruku,
+                         opet bez znanja osobe A ili osobe B.
+                    </p>
+                </div>
+            </div>
+
+             
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click jacking napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Click jacking Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Click jacking napad?</h3>
+                    <p> Click jacking je vrsta napada u kojem napadač prevari korisnika 
+                        da klikne na nešto što ne vidi. To se postiže tako što se nevidljivi element
+                         (poput dugmeta ili linka) sa zlonamjernim djelovanjem postavi iznad legitimnog
+                          sadržaja na web stranici.
+
+                         Korisnik misli da je kliknuo, na primjer, na „Play video“ ili „Like“ dugme,
+                          a zapravo je kliknuo na nešto skriveno – poput dozvole za pristup kameri, 
+                          potvrde transakcije, ili dijeljenja osjetljivih podataka.
+                       </p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/click1.jpg" alt=" click jacking primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>
+                        Napadač kreira svoju web stranicu i na nju postavlja iframe (ugrađeni prozor)
+                         koji prikazuje legitimnu stranicu žrtve (npr. stranicu za potvrdu plaćanja,
+                          "Like" dugme, promjenu lozinke itd.).
+
+                        Iframe je: nevidljiv (transparentan), ili pozicioniran tako 
+                        da prekriva dio koji korisnik vidi.
+
+
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/click2.jpg" alt="click jacking primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p> Napadač dizajnira svoju stranicu tako da preko iframe-a postavi vizualni mamac
+                         – na primer: dugme koje izgleda kao „Pogledaj video“, igra ili kviz, poklon bon.
+                        
+                        Korisnik misli da je kliknuo na bezopasni sadržaj, ali zapravo kliknuo
+                         je na skriveni element iz iframe-a.
+                        
+                        
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/click3.jpg" alt="click jacking primjer  3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Kada korisnik klikne na „mamac“, zapravo klikne na nešto što je ispod – na primer:
+
+                        potvrđuje transakciju,
+                        
+                        lajkuje stranicu,
+                        
+                        mijenja podešavanja naloga,
+                        
+                        daje pristup kameri ili mikrofonu.
+                        
+                    Napad uspiješno iskorištava korisnikovu neinformisanost o pravoj funkciji klika.
+                        
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 4 -->
+             <div class="step hidden">
+                <img src="slike/click4.jpg" alt=" click jacking primjer 4" />
+                <div class="step-text">
+                    <h3>Korak 4:</h3>
+                    <p>
+                        Nakon što korisnik klikne: napadač može da ostvari finansijsku korist, 
+                        poveća broj lajkova/pregleda, ili čak dobije pristup korisničkom nalogu ili uređaju.
+
+
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ddos Napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ddos Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Ddos napad?</h3>
+                    <p>Distributed Denial-of-Service (DDoS) napad je vrsta cyber napada u kojem se veliki broj kompromitovanih uređaja
+                         (često naziva botnet) koristi za preplavljivanje ciljanog sistema prometom ili zahtjevima, 
+                         preplavljujući njegove resurse i uzrokujući da postane nedostupan legitimnim korisnicima.
+
+                        U DDoS napadu, napadač obično preuzima kontrolu nad velikim brojem uređaja
+                         (kao što su računari ili IoT uređaji) tako što ih inficira malwareom ili iskorištava ranjivosti 
+                         u njihovom softveru. Ovi kompromitovani uređaji se zatim koriste za pokretanje koordinisanog napada 
+                         na ciljani sistem, preplavljujući ga saobraćajem iz više izvora u isto vrijeme.
+                        
+                        Cilj DDoS napada je da poremeti normalno funkcionisanje ciljanog sistema,
+                         čineći ga nedostupnim korisnicima. Ovo može uzrokovati značajnu finansijsku ili reputacijsku štetu meti,
+                          posebno ako se radi o kritičnoj usluzi ili web stranici.</p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/ddos-2.png" alt="Ddos primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Napadač prvo skenira milione mašina preko interneta kako bi pronašao ranjive mašine 
+                        čija se sigurnost može lako iskoristiti. Napadač instalira zlonamjerne kodove u ove zaražene mašine koje zatim postaju sposobne 
+                        da implementiraju dalje zaražene mašine.
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/ddos-3.png" alt="Ddos primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Sada je napadač prikupio dovoljan broj mašina koje još nazivamo i botnet. Te mašine 
+                       će sada u isto vrijeme slati zahtjeve prema serveru te ga na taj način opteretiti.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/ddos-5.png" alt="Ddos primjer 3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Kada prema serveru u isto vrijeme dolazi veliki broj zahtjeva on pokušava da odgovori na sve zahtjeve
+                        jer sam server ne može razlikovati da li je to stvaran zahtjev ili ddos napad. To dovodi do toga da 
+                        server ne može odgovoriti na zahtjeve stvarnih korisnika.
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

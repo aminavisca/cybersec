@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sql injection napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sql injection Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Sql-injection napad?</h3>
+                    <p>SQL injekcija je tehnika koju izvode napadači kako bi ciljali baze podataka,
+                        iskorištavajući ranjivosti u web aplikacijama. Ova ranjivost je rezultat slabosti 
+                        u filtriranju varijabli, koje omogućavaju napadaču da pristupi, preuzme,
+                        modificira ili izbriše korisničke podatke koristeći nelegitimne metode.
+                        Napad SQL Injection uključuje umetanje ili "ubacivanje" SQL upita putem ulaznih 
+                        podataka od klijenta do aplikacije. Uspješan napad omogućava napadaču da manipulira 
+                        SQL upitima koje aplikacija postavlja svojoj bazi podataka.
+
+                       </p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/sql1.jpg" alt="Sql-injection primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Najčešće se dešava kada aplikacija koristi nesigurne SQL upite, npr.:
+                         SELECT * FROM users WHERE username = 'user' AND password = 'password'
+
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/sql2.jpg" alt="Sql-injection primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Ako napadač unese ' OR '1'='1 umesto korisničkog imena, upit postaje: <br>
+                        SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'password';
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/sql3.jpg" alt="Sql-injection primjer  3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Izraz WHERE će vratiti prvi ID iz tabele korisnika, koja je obično administrator.
+                         To znači da napadač može pristupiti aplikaciji bez autentifikacije, 
+                         a također ima administratorske privilegije. <br> Nakon toga sa administratorskim privilegijama 
+                         može upravljati aplikacijom i vršiti promjene kako bi postigao
+                         željeni cilj.
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

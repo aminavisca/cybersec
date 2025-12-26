@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Engineering napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Engineering Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Social Engineering napad?</h3>
+                    <p>Društveni inženjering je tehnika manipulacije ljudima kako bi napadač dobio 
+                    pristup poverljivim informacijama ili sistemima.
+                    Umesto hakovanja računarskih sistema, napadači iskorištavaju ljudsku psihologiju.
+                    Ova vrsta napada je jedna od najopasnijih jer ne zahtijeva tehničko hakovanje sistema, 
+                    već osmišljene prevare koje često prolaze nezapaženo. Napadači se mogu predstavljati kao kolege,
+                     IT podrška, bankarski službenici ili čak članovi porodice kako bi prevarili žrtvu.
+                      
+
+                       </p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/drustveni1.jpg" alt=" social-engineering primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>
+                        Napadač prikuplja informacije o žrtvi (ime, posao, e-mail, navike) 
+                        sa društvenih mreža, poslovnih stranica ili javnih izvora.
+                        Cilj je identifikovati ranjivosti i osmisliti plan napada.
+
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/drustveni2.jpg" alt="social-engineering primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p> Napadač se predstavlja kao kolega, tehnička podrška, menadžer ili druga pouzdana osoba.
+                        Može koristiti lažne e-mailove, telefonske pozive ili čak lično kontaktirati žrtvu.
+                        Napadač koristi trikove poput hitnosti, straha ili poverenja kako bi žrtva postupila kako napadač želi.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/sql3.jpg" alt="social-engineering primjer  3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Kada žrtva upadne u zamku, napadač dobija tražene podatke (lozinke, novac, pristup sistemima).
+                        Napadač uzme podatke koje želi koje kasnije može koristiti u razne svrhe. 
+                        Nakon preuzimanja podataka napadač prikriva svoje tragove prije nego što ga korisnik i primijeti.
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

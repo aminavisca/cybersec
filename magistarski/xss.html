@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>XSS Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je XSS napad?</h3>
+                    <p>XSS napad je vrsta vulnerabilnosti web aplikacija
+                         koja omogućava napadaču da ubaci i izvrši zlonamjerni JavaScript kod 
+                         u web stranicu koju koriste drugi korisnici. </p>
+
+                       <p> Cilj napada je da:
+                        
+                        ukrade podatke korisnika (npr. kolačiće, sesije),
+                        
+                        prikaže lažne forme (za krađu lozinki),
+                        
+                        preusmjeri korisnika na lažnu stranicu,
+                        
+                        ili manipuliše prikazom sadržaja na sajtu. </p>
+                        
+                        <p>Do XSS-a dolazi kada aplikacija ne filtrira pravilno korisnički unos,
+                             pa se zlonamjerni kod izvršava u pregledaču drugih korisnika,
+                              kao da dolazi od pouzdanog sajta.
+                       </p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/xss1.jpg" alt=" xss primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>
+                        Napadač prvo identifikuje web aplikaciju koja ne filtrira pravilno korisnički unos.
+                         On istražuje mjesta kao što su: formulari za kontakt,komentari na blogu, pretraga proizvoda, 
+                         polja za prijavu ili registraciju. </p>
+<p>Cilj je pronaći mjesto gdje aplikacija „vraća” korisnički unos kao dio HTML sadržaja. Napadač može u komentar upisati neki dio koda.
+ Ukoliko se to prikaže kao izvršni kod na aplikaciji, smatra se da je meta ranjiva.
+
+
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/xss2.jpg" alt="xss primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p> Nakon što pronađe ranjivost, napadač ubacuje zlonamjerni JavaScript kod. On može:
+                        prikazati lažnu poruku (alert),
+                        ukrasti kolačiće (cookies),
+                        preusmjeriti korisnika na lažnu stranicu (phishing),
+                        izvršiti druge maliciozne akcije.
+                        Ovaj kod postaje dio stranice i izvršava se u kontekstu pregledača žrtve svaki put kad se stranica učita.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/xss3.jpg" alt="xss primjer  3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Nedužni korisnik (žrtva) otvara stranicu (npr. čita članak sa komentarima).
+                         Tada pregledač automatski izvršava ubačeni JavaScript kod, ne shvata da je kod 
+                         došao od treće strane i
+                        šalje podatke (npr. kolačiće, sesiju) napadaču.
+                        
+                        Korisnik vjeruje stranici koju posjećuje, pa daje pristup osjetljivim informacijama.
+                        
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

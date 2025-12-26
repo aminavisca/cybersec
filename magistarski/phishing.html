@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Phishing Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Phishing?</h3>
+                    <p>Phishing je vrsta cyber napada u kojem napadači koriste lažne poruke, 
+                        e-mailove ili web stranice kako bi prevarili žrtve i ukrali osjetljive podatke 
+                        poput lozinki, brojeva kreditnih kartica ili osobnih informacija. Ove poruke često
+                        izgledaju kao da dolaze od pouzdanih izvora, poput banaka, društvenih mreža ili
+                        poznatih organizacija. Napadači koriste psihološku manipulaciju, stvarajući osjećaj 
+                        hitnosti ili straha, primjerice tvrdnjama da je "račun blokiran" ili da je potrebno 
+                        "ažurirati podatke". Cilj phishing napada može biti krađa identiteta, financijska prevara
+                        ili instalacija zlonamjernog softvera na uređaj žrtve.</p>
+                </div>
+
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/phishing1.jpg" alt="phishing primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Napadač identificira potencijalne žrtve (pojedince, organizacije) 
+                        i prikuplja informacije o njima kako bi napad bio uvjerljiviji.
+                        Nakon toga kreira uvjerljiv e-mail, SMS ili web stranicu koja izgleda kao da dolazi
+                        od legitimnog izvora (npr. banka, popularna online platforma).
+                        Sadržaj obično sadrži hitne pozive na akciju, poput "Vaš račun je ugrožen"
+                        ili "Potrebno je ažurirati podatke".
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/phishing2.jpg" alt="phishing primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Phishing poruka se šalje ciljanom korisniku ili grupi korisnika putem e-maila, 
+                        SMS-a, društvenih mreža ili čak telefonskog poziva.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/phishing3.jpg" alt="phishing primjer 3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Žrtva otvara lažnu poruku i klikne na priloženi link ili unese svoje podatke na lažnoj web stranici.
+                    </p>
+                </div>
+            </div>
+
+                    <!-- Korak 4 -->
+                    <div class="step hidden">
+                        <img src="slike/phishing4.jpg" alt="phishing primjer 4" />
+                        <div class="step-text">
+                            <h3>Korak 4:</h3>
+                            <p>Kada žrtva unese podatke, oni se šalju napadaču.
+                                Napadač koristi ukradene podatke za financijsku dobit, 
+                                pristup korisničkim računima ili daljnje širenje napada.
+                            </p>
+                        </div>
+                    </div>
+
+             
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero day napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Zero day napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Zero-day napad?</h3>
+                    <p>Napad nultog dana je ranjivost softvera koju napadači iskorištavaju
+                        prije nego što je dobavljač saznao. U tom trenutku ne postoji zakrpa,
+                        tako da napadači mogu lako iskoristiti ranjivost znajući da nema odbrane. 
+                        Ovo čini ranjivosti nultog dana ozbiljnom sigurnosnom prijetnjom.
+                        Jednom kada napadači identifikuju ranjivost nultog dana, potreban im je mehanizam 
+                        isporuke da bi došli do ranjivog sistema. U mnogim slučajevima mehanizam isporuke 
+                        je društveno dizajnirana e-pošta ili druga poruka koja je navodno od 
+                        poznatog ili legitimnog dopisnika, a zapravo je od napadača. 
+                        Poruka pokušava uvjeriti korisnika da izvrši radnju poput otvaranja datoteke
+                        ili posjete zlonamjernoj web stranici, nesvjesno aktivirajući eksploataciju.
+
+                       </p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/zeroday1.jpg" alt="Zero-day primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Traženje ranjivosti - napadači pretražuju kod ili eksperimentišu sa popularnim aplikacijama,
+                        tražeći ranjivosti. Oni također mogu kupiti ranjivosti na crnom tržištu. Nakon toga napadači kreiraju zlonamjerni program
+                        ili druga tehnička sredstva za iskorištavanje ranjivosti.
+
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/zeroday2.jpg" alt="Zero-day primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Traženje sistema na koje utiče ranjivost - napadači mogu koristiti botove, 
+                        automatizovane skenere i druge metode da identifikuju sisteme koji pate od ranjivosti.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/zeroday3.jpg" alt="Zero-day primjer  3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Planiranje napada - u ciljanom napadu na određenu organizaciju,
+                        napadači mogu izvršiti detaljno izviđanje kako bi identifikovali
+                        najbolji način da prodru u ranjivi sistem. U neciljanom napadu, 
+                        napadači će obično koristiti botove ili masivne phishing kampanje
+                        kako bi pokušali prodrijeti u što više ranjivih sistema.
+                    </p>
+                </div>
+            </div>
+
+              <!-- Korak 4 -->
+              <div class="step hidden">
+                <img src="slike/zeroday4.jpg" alt="Zero-day primjer  4" />
+                <div class="step-text">
+                    <h3>Korak 4:</h3>
+                    <p>Infiltracija - napadač prolazi kroz odbranu organizacije ili ličnog uređaja.
+                    Napadači su sada u mogućnosti da izvrše kod na daljinu na kompromitovanoj mašini.
+                    </p>
+                </div>
+            </div>
+
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

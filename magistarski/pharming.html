@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharming Napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pharming Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Pharming?</h3>
+                    <p>Kao i phishing, farming primorava žrtve da posjete lažnu web stranicu i daju informacije.
+                        Međutim, umjesto da prevari primatelje da kliknu na link e-pošte, farming može potajno 
+                        preusmjeriti žrtve na lažnu web stranicu direktno iz njihovog web pretraživača. 
+                        Napadači mogu direktno kompromitovati sistem žrtve tako što
+                        će tajno instalirati zlonamjerni softver na njen računar ili modifikovati host 
+                        fajl. Alternativno, napadači mogu koristiti "trovanje DNS keša" kako bi efikasno
+                        kompromitovali DNS server. Čak i ako ručno unesete web-adresu svoje banke ili finansijske 
+                        institucije direktno u svoj preglednik, ili kliknete na sačuvanu oznaku, moguće je da
+                        napad može uzrokovati da vaš preglednik nenametljivo preusmjeri na sajt za 
+                        prevaru. Ako je stranica za prevaru napravljena da liči na legitimnu web stranicu ciljane
+                        institucije, žrtva bi mogla unijeti brojeve računa, lozinke i druge osjetljive
+                        informacije prije nego što shvati šta se dešava.</p>
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/pharming1.jpg" alt="pharming primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Napadač kompromituje DNS server ili mijenja korisnikov lokalni host fajl.
+                         Promjena uzrokuje da se DNS upiti rješavaju na IP adresu napadača umjesto na legitimnu stranicu.
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/pharming2.jpg" alt="pharming primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Kada korisnik pokuša posjetiti legitimnu web stranicu, izmanipulirani DNS ga umjesto toga usmjerava na lažnu stranicu koja izgleda slično, čak i identično, legitimnoj. 
+                        Ovo preusmjeravanje se odvija bez problema, bez znanja korisnika.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/pharming3.jpg" alt="pharming primjer 3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Lažna stranica je dizajnirana da uhvati osjetljive informacije kao što su korisnička imena, lozinke i detalji o kreditnoj kartici.
+                         Budući da stranica izgleda legitimno, korisnici unose svoje podatke bez oklijevanja.
+                    </p>
+                </div>
+            </div>
+
+             
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+   

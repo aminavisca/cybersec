@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware Napad - Cybersigurnost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ransomware Napad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attack-details">
+            
+            
+            <!-- Korak 1 -->
+            <div class="step">
+                
+                <div class="step-text">
+                    <h3>Šta je Ransomware napad?</h3>
+                    <p>Ransomware napad je vrsta cyber napada u kojem napadači koriste zlonamjerni 
+                        softver za šifriranje podataka na računalu ili mreži, a zatim zahtijevaju otkupninu
+                        (obično u kriptovalutama) kako bi žrtvi omogućili povrat pristupa tim podacima.
+                        Ovi napadi često započinju putem phishing e-mailova, zaraženih privitaka ili 
+                        iskorištavanjem sigurnosnih ranjivosti. Nakon šifriranja, na zaslonu se pojavljuje
+                        poruka s uputama za plaćanje. Napadi mogu izazvati ozbiljne financijske gubitke i 
+                        prekid poslovanja, a čak i nakon plaćanja nema garancije da će podaci biti vraćeni.</p>
+                     
+                </div>
+            </div>
+            
+            <!-- Korak 1 -->
+            <div class="step hidden">
+                <img src="slike/phishing1.jpg" alt="Ransomware primjer 1" />
+                <div class="step-text">
+                    <h3>Korak 1:</h3>
+                    <p>Napadač identificira potencijalne žrtve (pojedince, organizacije) 
+                        i prikuplja informacije o njima kako bi napad bio uvjerljiviji.
+                        Nakon toga kreira uvjerljiv e-mail, SMS ili web stranicu koja izgleda kao da dolazi
+                        od legitimnog izvora (npr. banka, popularna online platforma).
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 2 -->
+             <div class="step hidden">
+                <img src="slike/phishing2.jpg" alt="Ransomware primjer 2" />
+                <div class="step-text">
+                    <h3>Korak 2:</h3>
+                    <p>Phishing poruka se šalje ciljanom korisniku ili grupi korisnika putem e-maila, 
+                        SMS-a, društvenih mreža.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Korak 3 -->
+            <div class="step hidden">
+                <img src="slike/ransomware3.jpg" alt="Ransomware primjer 3" />
+                <div class="step-text">
+                    <h3>Korak 3:</h3>
+                    <p>Nakon što žrtva klikne na zlonamjerni link, otvori zaraženi privitak 
+                        ili sistem padne zbog iskorištavanja ranjivosti, ransomware ulazi u sistem.
+                        Ransomware šifrira podatke na uređaju ili mreži koristeći snažne enkripcijske 
+                        algoritme. Žrtva gubi pristup svojim datotekama.
+                    </p>
+                </div>
+            </div>
+
+             <!-- Korak 4 -->
+             <div class="step hidden">
+                <img src="slike/ransomware4.jpg" alt="Ransomware primjer 4" />
+                <div class="step-text">
+                    <h3>Korak 4:</h3>
+                    <p>Na zaslonu se pojavljuje poruka od napadača koja obavještava žrtvu da su njezini podaci šifrirani
+                         te zahtijeva plaćanje otkupnine (obično u kriptovaluti) u određenom roku.
+                         Ako žrtva plati otkupninu, napadači ponekad dostave ključ za dešifriranje,
+                         ali nema garancije da će podaci biti vraćeni. Ako se otkupnina ne plati,
+                         podaci mogu ostati zaključani, a napadači prijete njihovim objavljivanjem.
+                    </p>
+                </div>
+            </div>
+
+          
+
+            <button id="nextStepButton" onclick="showNextStep()">Dalje</button>
+            <button id="prevStepButton" style="display: none;" onclick="showPreviousStep()">Nazad</button>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
